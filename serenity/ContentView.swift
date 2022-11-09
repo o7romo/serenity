@@ -22,7 +22,7 @@ struct ContentView: View {
         ScrollView(showsIndicators: false) //allows for scrolling
         {
             VStack(alignment: . leading){ //makes the text move to left
-                Text("Welcome user")
+                Text("Welcome userr")
                     .font(.custom("Avenir-Heavy", size: 30))
                 Text("Ready to start your mindfulness journey?")
                     .font(.custom("Avenir-Medium", size: 18))
