@@ -17,7 +17,7 @@ struct ContentView: View {
     }
     
     var body: some View {
-        \
+        
             
         ScrollView(showsIndicators: false) //allows for scrolling
         {
