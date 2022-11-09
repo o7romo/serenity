@@ -10,23 +10,30 @@ import SwiftUI
 struct ContentView: View {
     
     init() {
-        UINavigationBar.appearance()
-            .setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
+     
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().isTranslucent = false
         UINavigationBar.appearance().barTintColor = .systemGroupedBackground
     }
     
     var body: some View {
-        
+        \
             
         ScrollView(showsIndicators: false) //allows for scrolling
         {
-            VStack{
-                Text("Welcome baby")
+            VStack(alignment: . leading){ //makes the text move to left
+                Text("Welcome user")
+                    .font(.custom("Avenir-Heavy", size: 30))
                 Text("Ready to start your mindfulness journey?")
-            }
+                    .font(.custom("Avenir-Medium", size: 18))
+                    .foregroundColor(Color(.systemGray))
+                HStack{
+                    Spacer()
+                }
+            }.padding(29)
             
+            
+    
             .navigationBarTitleDisplayMode(.inline) //Configures the title display mode for this view.
             
             .navigationBarItems(leading: Button{ //adds navigation symbols
@@ -57,3 +64,4 @@ struct ContentView_Previews: PreviewProvider {
         
     }
 }
+
