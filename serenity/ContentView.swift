@@ -138,7 +138,7 @@ struct MeditationCard: View {
                 .fontWeight(.semibold)
                 .padding(.horizontal, 16)
                 .foregroundColor(.white)
-            Text("asfjaosfff")
+            Text("asfjaosff")
                 .font(.subheadline)
                 .lineLimit(3)
                 .padding(.top,4)
