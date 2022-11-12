@@ -11,6 +11,8 @@
 		EF59888D28EF4D470013B0B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF59888C28EF4D470013B0B5 /* ContentView.swift */; };
 		EF59888F28EF4D480013B0B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF59888E28EF4D480013B0B5 /* Assets.xcassets */; };
 		EF59889228EF4D490013B0B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF59889128EF4D490013B0B5 /* Preview Assets.xcassets */; };
+		EFC8507F291F6F9D0030C85E /* MainTabNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC8507E291F6F9D0030C85E /* MainTabNavView.swift */; };
+		EFC85081291F733E0030C85E /* JournalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC85080291F733E0030C85E /* JournalsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		EF59888C28EF4D470013B0B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EF59888E28EF4D480013B0B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF59889128EF4D490013B0B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EFC8507E291F6F9D0030C85E /* MainTabNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabNavView.swift; sourceTree = "<group>"; };
+		EFC85080291F733E0030C85E /* JournalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				EF59888C28EF4D470013B0B5 /* ContentView.swift */,
 				EF59888E28EF4D480013B0B5 /* Assets.xcassets */,
 				EF59889028EF4D490013B0B5 /* Preview Content */,
+				EFC8507E291F6F9D0030C85E /* MainTabNavView.swift */,
+				EFC85080291F733E0030C85E /* JournalsView.swift */,
 			);
 			path = serenity;
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC8507F291F6F9D0030C85E /* MainTabNavView.swift in Sources */,
 				EF59888D28EF4D470013B0B5 /* ContentView.swift in Sources */,
+				EFC85081291F733E0030C85E /* JournalsView.swift in Sources */,
 				EF59888B28EF4D470013B0B5 /* serenityApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

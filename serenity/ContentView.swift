@@ -13,7 +13,7 @@ struct ContentView: View {
     @State private var searchText = ""
     
     init() {
-     
+
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().isTranslucent = true
         UINavigationBar.appearance().barTintColor = .systemGroupedBackground
@@ -84,6 +84,8 @@ struct ContentView: View {
     }
 }
 
+
+
 //Defines a main routine card
 struct RoutineCard: View{
     var body: some View{
@@ -111,6 +113,9 @@ struct RoutineCard: View{
 struct MedidationTypeRow: View {
     var body: some View{
        
+        Text("Featured Exercises")
+            .font(.title)
+            .fontWeight(.bold)
         // Scrollview that scrolls horisontally
         //Sees cards by swiping left and right.
         //no indicators.
@@ -151,7 +156,6 @@ struct MeditationCard: View {
         
     }
 }
-
 
 
 
