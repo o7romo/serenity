@@ -13,7 +13,7 @@ struct JournalsView: View {
         VStack(alignment: . leading){
             Text("My Journals")
                 .font(.custom("Avenir-Heavy", size: 30))
-            Text("The Journals I've Written So Far")
+            Text("The Journals I've Written So Far.")
                 .font(.custom("Avenir-Medium", size: 18))
                 .foregroundColor(Color(.systemGray))
         
