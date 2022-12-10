@@ -11,6 +11,10 @@
 		EF59888D28EF4D470013B0B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF59888C28EF4D470013B0B5 /* ContentView.swift */; };
 		EF59888F28EF4D480013B0B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF59888E28EF4D480013B0B5 /* Assets.xcassets */; };
 		EF59889228EF4D490013B0B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF59889128EF4D490013B0B5 /* Preview Assets.xcassets */; };
+		EF9295A82940795100A9482C /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF9295A62940795100A9482C /* Model.xcdatamodeld */; };
+		EF9295AA29407B0900A9482C /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9295A929407B0900A9482C /* Storyboard.storyboard */; };
+		EF9295AC29407BA300A9482C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9295AB29407BA300A9482C /* TableViewController.swift */; };
+		EF9295AE29407BFD00A9482C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9295AD29407BFD00A9482C /* TableViewCell.swift */; };
 		EFC8507F291F6F9D0030C85E /* MainTabNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC8507E291F6F9D0030C85E /* MainTabNavView.swift */; };
 		EFC85081291F733E0030C85E /* JournalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC85080291F733E0030C85E /* JournalsView.swift */; };
 /* End PBXBuildFile section */
@@ -21,6 +25,10 @@
 		EF59888C28EF4D470013B0B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EF59888E28EF4D480013B0B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF59889128EF4D490013B0B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF9295A72940795100A9482C /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		EF9295A929407B0900A9482C /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		EF9295AB29407BA300A9482C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		EF9295AD29407BFD00A9482C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		EFC8507E291F6F9D0030C85E /* MainTabNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabNavView.swift; sourceTree = "<group>"; };
 		EFC85080291F733E0030C85E /* JournalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +69,10 @@
 				EF59889028EF4D490013B0B5 /* Preview Content */,
 				EFC8507E291F6F9D0030C85E /* MainTabNavView.swift */,
 				EFC85080291F733E0030C85E /* JournalsView.swift */,
+				EF9295A62940795100A9482C /* Model.xcdatamodeld */,
+				EF9295A929407B0900A9482C /* Storyboard.storyboard */,
+				EF9295AD29407BFD00A9482C /* TableViewCell.swift */,
+				EF9295AB29407BA300A9482C /* TableViewController.swift */,
 			);
 			path = serenity;
 			sourceTree = "<group>";
@@ -133,6 +145,7 @@
 			files = (
 				EF59889228EF4D490013B0B5 /* Preview Assets.xcassets in Resources */,
 				EF59888F28EF4D480013B0B5 /* Assets.xcassets in Resources */,
+				EF9295AA29407B0900A9482C /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,8 +157,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFC8507F291F6F9D0030C85E /* MainTabNavView.swift in Sources */,
+				EF9295AC29407BA300A9482C /* TableViewController.swift in Sources */,
 				EF59888D28EF4D470013B0B5 /* ContentView.swift in Sources */,
+				EF9295A82940795100A9482C /* Model.xcdatamodeld in Sources */,
 				EFC85081291F733E0030C85E /* JournalsView.swift in Sources */,
+				EF9295AE29407BFD00A9482C /* TableViewCell.swift in Sources */,
 				EF59888B28EF4D470013B0B5 /* serenityApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +361,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EF9295A62940795100A9482C /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF9295A72940795100A9482C /* Model.xcdatamodel */,
+			);
+			currentVersion = EF9295A72940795100A9482C /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../Model/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EF59887F28EF4D470013B0B5 /* Project object */;
 }

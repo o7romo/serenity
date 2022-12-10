@@ -11,12 +11,14 @@ import UIKit
 struct ContentView: View {
     
     @State private var searchText = ""
+        
+    
     
     init() {
 
-        UINavigationBar.appearance().shadowImage = UIImage()
-        UINavigationBar.appearance().isTranslucent = true
-        UINavigationBar.appearance().barTintColor = .systemGroupedBackground
+//        UINavigationBar.appearance().shadowImage = UIImage()
+//        UINavigationBar.appearance().isTranslucent = true
+//        UINavigationBar.appearance().barTintColor = .systemGroupedBackground
     }
     
     var searchView: some View{
@@ -39,12 +41,14 @@ struct ContentView: View {
             
         ScrollView(showsIndicators: false) //allows for scrolling
         {
-            VStack(alignment: . leading){ //makes the text move to left
+            VStack(alignment: . leading)
+            { //makes the text move to left
                 Text("Welcome user")
                     .font(.custom("Avenir-Heavy", size: 30))
+                    .foregroundColor(Color(.systemTeal))
                 Text("Ready to start your mindfulness journey?")
                     .font(.custom("Avenir-Medium", size: 18))
-                    .foregroundColor(Color(.systemGray))
+                    .foregroundColor(Color(.systemTeal))
                 searchView
                 
                 
@@ -53,7 +57,7 @@ struct ContentView: View {
                 Text("Featured Routine")
                     .font(.custom("Avenir-Medium", size: 28))
                     .fontWeight(.bold)
-                    .foregroundColor(.black)
+                    .foregroundColor(Color(.systemTeal))
                     .padding(.horizontal,2)
                 
                 RoutineCard().padding(.horizontal, 5)
@@ -61,7 +65,8 @@ struct ContentView: View {
                 MedidationTypeRow()
                 
                 
-            }.padding(29)
+            }
+            .padding(29)
             
             
     
@@ -105,7 +110,7 @@ struct RoutineCard: View{
         }
         
         .frame(height: 100)
-        .background(Color(.systemGray))
+        .background(Color(.systemTeal))
         .cornerRadius(20)
     }
 }
@@ -116,6 +121,7 @@ struct MedidationTypeRow: View {
         Text("Featured Exercises")
             .font(.title)
             .fontWeight(.bold)
+            .foregroundColor(Color(.systemTeal))
         // Scrollview that scrolls horisontally
         //Sees cards by swiping left and right.
         //no indicators.
@@ -133,23 +139,42 @@ struct MedidationTypeRow: View {
 struct MeditationCard: View {
     var body: some View{
         VStack (alignment: .leading){
-            Text("Morning Gratitude")
+            
+            ZStack{
+                
+                Rectangle()
+                    .frame(width: 300, height: 200)
+                    .foregroundColor(Color(.systemTeal))
+                
+                Image("meditate_art")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 120, height:120)
+                
+                
+            }
+            
+            
+        
+            
+            Text("Meditation Exercise")
                 .font(.title2)
                 .fontWeight(.semibold)
                 .padding(.horizontal, 16)
-                .foregroundColor(.white)
+                .foregroundColor(.black)
             Text("asfjaolsf")
                 .font(.subheadline)
                 .lineLimit(3)
                 .padding(.top,4)
                 .padding(.horizontal, 16)
-                .foregroundColor(.white)
+                .foregroundColor(.black)
             Spacer()
         }
         
         //card characterstics
         .frame(width:280, height: 340)
-        .background(Color.gray)
+//        .background(Color.gray)
+        .background(Color(.systemGray6))
         .cornerRadius(30)
         
     
